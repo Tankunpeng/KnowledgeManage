@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, user-scalable = no, initial-scale = 1, minimum-scale = 1, maximum-scale = 1,minimal-ui">
+    <link rel="stylesheet" type="text/css" href="css/basic.css">
+    <script src="js/vue.js"></script>
+    <script src="js/jquery-3.2.0.js"></script>
+    <title> html 知识结构</title>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body>
+<div id="app" style="padding-bottom: 5em">
+  <my-content
+    v-bind:items = "items"
+    @del = "del"
+    @edit = "edit"
+    class="my-content">
+  </my-content>
+  <my-add-item class="my-add-item" @add="additem">
+  </my-add-item>
+  <pre id="todobkg">{{todoBkg}}</pre>
+  <ul id="ref">Reference:
+    <li>  <a href="/es7">ES7标准文档</a> </li>
+    <li>  <a href="http://www.baidu.com">百度</a> </li>
+    <li> <a href="http://es6.ruanyifeng.com" rel="_blank">ECMAScript 6入门</a></li>
+  </ul>
+</div>
+
+
+ <script src="js/component.js"></script>
+</body>
+</html>
